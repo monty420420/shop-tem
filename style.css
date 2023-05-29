@@ -8,6 +8,28 @@
   --color-light-grey: #dfdfdf;
 }
 
+body {
+  background-color: #3f454d;
+  text-align: center;
+  margin-top: 100px;
+}
+body .btn_blue {
+  background-color: blue;
+}
+body .btn_yellow {
+  background-color: yellow;
+}
+body .btn_pink {
+  background-color: #fd7f84;
+}
+body .items {
+  display: flex;
+  flex-direction: column;
+}
+body .items_item {
+  display: inline-block;
+}
+
 * {
   box-sizing: border-box;
 }/*# sourceMappingURL=style.css.map */

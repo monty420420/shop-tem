@@ -8,6 +8,36 @@
   --color-light-grey: #dfdfdf;
 }
 
+body {
+  background-color: #3f454d;
+  text-align: center;
+  margin-top: 100px;
+  .btn{
+    &_t{
+    }
+    &_p{
+    }
+    &_s{
+    }
+    &_blue{
+    background-color: blue;
+    }
+    &_yellow{
+    background-color: yellow;
+    }
+    &_pink{
+      background-color: #fd7f84;
+    }
+  }
+  .items{
+    display: flex;
+    flex-direction: column;
+    &_item{
+      display: inline-block;
+    }
+  }
+}
+
 * {
   box-sizing: border-box;
 }
