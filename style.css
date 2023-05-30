@@ -6,30 +6,79 @@
   --color-yellow: #fbbe28;
   --color-pink: #fd7f84;
   --color-light-grey: #dfdfdf;
+  /*size*/
+  --size-button: 60px;
 }
 
 body {
-  background-color: #3f454d;
-  text-align: center;
-  margin-top: 100px;
-}
-body .btn_blue {
-  background-color: blue;
-}
-body .btn_yellow {
-  background-color: yellow;
-}
-body .btn_pink {
-  background-color: #fd7f84;
-}
-body .items {
+  background-color: var(--color-black);
+  justify-content: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-body .items_item {
-  display: inline-block;
+body .logo {
+  cursor: pointer;
+  transition: transform 300ms ease;
 }
-
+body .logo:hover {
+  transform: scale(1.1);
+}
+body .btn {
+  display: flex;
+}
+body .btn_t {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  transition: transform 300ms ease;
+}
+body .btn_t:hover {
+  transform: scale(1.1);
+}
+body .btn_p {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  transition: transform 300ms ease;
+}
+body .btn_p:hover {
+  transform: scale(1.1);
+}
+body .btn_s {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  transition: transform 300ms ease;
+}
+body .btn_s:hover {
+  transform: scale(1.1);
+}
+body .btn_text {
+  margin: 12px;
+}
+body .btn_text_blue {
+  background-color: var(--color-blue);
+  cursor: pointer;
+  padding: 10px;
+}
+body .btn_text_yellow {
+  background-color: var(--color-yellow);
+  cursor: pointer;
+  padding: 10px;
+}
+body .btn_text_pink {
+  background-color: var(--color-pink);
+  cursor: pointer;
+  padding: 10px;
+}
+body .btn .img {
+  width: var(--size-button);
+  height: var(--size-button);
+}
 * {
   box-sizing: border-box;
 }/*# sourceMappingURL=style.css.map */

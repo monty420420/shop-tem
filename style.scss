@@ -6,34 +6,85 @@
   --color-yellow: #fbbe28;
   --color-pink: #fd7f84;
   --color-light-grey: #dfdfdf;
+  
+  /*size*/
+  --size-button: 60px;
 }
 
 body {
-  background-color: #3f454d;
-  text-align: center;
-  margin-top: 100px;
+  background-color: var(--color-black);
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .logo{
+    cursor: pointer;
+    transition: transform 300ms ease;
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
   .btn{
+    display: flex;
     &_t{
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      transition: transform 300ms ease;
+      &:hover{
+        transform: scale(1.1);
+      }
     }
     &_p{
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      transition: transform 300ms ease;
+      &:hover{
+        transform: scale(1.1);
+      }
     }
     &_s{
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      transition: transform 300ms ease;
+      &:hover{
+        transform: scale(1.1);
+      }
     }
-    &_blue{
-    background-color: blue;
+    &_text{
+      margin: 12px;
+      &_blue{
+        background-color: var(--color-blue);
+        cursor: pointer;
+        padding: 10px;
+        }
+        &_yellow{
+        background-color: var(--color-yellow);
+        cursor: pointer;
+        padding: 10px;
+        }
+        &_pink{
+          background-color: var( --color-pink);
+          cursor: pointer;
+          padding: 10px;
+        }
     }
-    &_yellow{
-    background-color: yellow;
-    }
-    &_pink{
-      background-color: #fd7f84;
+    .img{
+      width: var(--size-button);
+      height: var(--size-button);
     }
   }
   .items{
-    display: flex;
-    flex-direction: column;
     &_item{
-      display: inline-block;
+      &_thumb{
+      }
+      &_explain{
+      }
     }
   }
 }
