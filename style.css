@@ -8,6 +8,9 @@
   --color-light-grey: #dfdfdf;
   /*size*/
   --size-button: 60px;
+  --base-space: 8px;
+  --size-border: 4px;
+  --size-thumb: 50px;
 }
 
 body {
@@ -16,6 +19,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-y: scroll;
+  height: 700px;
 }
 body .logo {
   cursor: pointer;
@@ -63,22 +68,50 @@ body .btn_text {
 body .btn_text_blue {
   background-color: var(--color-blue);
   cursor: pointer;
-  padding: 10px;
+  padding: var(--base-space);
+  border-radius: var(--size-border);
 }
 body .btn_text_yellow {
   background-color: var(--color-yellow);
   cursor: pointer;
-  padding: 10px;
+  padding: var(--base-space);
+  border-radius: var(--size-border);
 }
 body .btn_text_pink {
   background-color: var(--color-pink);
   cursor: pointer;
-  padding: 10px;
+  padding: var(--base-space);
+  border-radius: var(--size-border);
 }
 body .btn .img {
   width: var(--size-button);
   height: var(--size-button);
 }
+body .items {
+  width: 40%;
+  height: 40%;
+  list-style: none;
+  padding-left: 0;
+  overflow-y: scroll;
+}
+body .items_item {
+  display: flex;
+  align-items: center;
+  background-color: #dfdfdf;
+  margin-bottom: var(--base-space);
+  cursor: pointer;
+}
+body .items_item:last-child {
+  margin-bottom: 0;
+}
+body .items_item_thumb {
+  width: var(--size-thumb);
+  height: var(--size-thumb);
+}
+body .items_item_explain {
+  padding-left: 20px;
+}
+
 * {
   box-sizing: border-box;
 }/*# sourceMappingURL=style.css.map */
