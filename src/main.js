@@ -22,9 +22,9 @@ function loadItems() {
   function onButtonClick(event, items) {
     const dataset = event.target.dataset;
     const key = event.target.dataset.key;
-    //console.log(key); 
+    console.log(key); 
     const value = event.target.dataset.value; // 클릭된 버튼의 data-value 값 가져오기
-    //console.log(value); 
+    console.log(value); 
     const target = event.target;
     // console.log(target);
     //console.log(items)
@@ -32,13 +32,14 @@ function loadItems() {
       return;
     }
     // console.log(items);
-    const filterd = items.filter(item => item[key] === value); //items에서 item에 key배열에 해당하는 데이터(type,color 등등)이 클릭된 data-value(위에서만든 value 변수)와 같은값을 filterd변수에 넣음 //html에 data-key="type" data-value="tshirt"등을 넣음
-    // console.log(items);
-    // console.log(filterd);
+    const filtered = items.filter(item => item[key] === value); //items에서 item에 key배열에 해당하는 데이터(type,color 등등)이 클릭된 data-value(위에서만든 value 변수)값인 것을 filterd변수에 넣음
+                                                               //예를 들어, key가 "type"이고 value가 "tshirt"인 경우, item["type"]이 "tshirt"인 아이템들만 필터링하여 반환
+    console.log(items);                    
+    // console.log(filtered);
     // console.log([key]); 
     // console.log(key); 
     // console.log(value); 
-    displayItems(filterd); 
+    displayItems(filtered); 
   }
   
   function setEventListeners(items) {
