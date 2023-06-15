@@ -32,9 +32,13 @@ function loadItems() {
       return;
     }
     // console.log(items);
-    const filterd = items.filter(item => item[key] === value);
+    const filterd = items.filter(item => item[key] === value); //items에서 item에 key배열에 해당하는 데이터(type,color 등등)이 클릭된 data-value(위에서만든 value 변수)와 같은값을 filterd변수에 넣음 //html에 data-key="type" data-value="tshirt"등을 넣음
+    // console.log(items);
     // console.log(filterd);
-    displayItems(filterd);
+    // console.log([key]); 
+    // console.log(key); 
+    // console.log(value); 
+    displayItems(filterd); 
   }
   
   function setEventListeners(items) {
